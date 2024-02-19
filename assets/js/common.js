@@ -43,4 +43,7 @@ function burgerMenu() {
     const navbarMobile = document.getElementById('navbar-mobile')
     navbarMobile.classList.toggle('d-none')
 }
-        
+
+displayHeader()
+displayFooter()
+burgerMenu()
