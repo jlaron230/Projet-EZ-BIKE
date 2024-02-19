@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>EZ-Bike - Accueil </title>
 </head>
 <body>
-    <script>
-displayHeader()
-displayFooter()
-burgerMenu()
-    </script>
+    <!-- Pas de <header>, celui-ci est injecté directement en JS depuis le fichier "common.js" -->
+    <section class="d-flex"> 
+        <!-- div parente -->
+        <div>
+            <!-- div enfant "intro" -->
+            <h1>Roulez vert à Marseille avec notre Velib' zéro Co2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut non maiores totam laborum consequatur repellendus officia perspiciatis quasi fugiat at consectetur, autem, velit pariatur recusandae aut eveniet voluptatem! Earum!</p>
+            <button>Calcul Co2</button> ou
+            <button>Trouver une station</button>
+        </div>
+            <img class="img_index_1" src="image/ez-bike_hero_500..jpg" alt="illustration station de velo avec un personnage qui ramene son vélo et un qui est sur la borne">
+       
+    </section>
+
+    <section class="d-flex">
+        <!-- div parente 2e partie -->
+        <div>
+            <!-- div enfant "comment ça marche" -->
+            <h2>1 - Comment ça marche ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quisquam asperiores id, natus ex quam quos aliquid</p>
+            <hr>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae recusandae cumque quam illo accusantium.
+        </div>
+            <img class="img_index" src="image/ez-bike_city_500.jpg" alt="illustration homme faisant du vélo en ville">
+    </section>
+
+    <section class="d-flex">
+        <!-- div parente 3e partie -->
+        <div>
+            <!-- div enfant "se rendre à la station" -->
+            <h2>2 - Se rendre à la station</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quisquam asperiores id, natus ex quam quos aliquid</p>
+            <hr>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae recusandae cumque quam illo accusantium.
+        </div>
+            <img class="img_index" src="image/ez-bike_station_500.webp" alt="">
+    </section>
+    <script src="assets/js/common.js"> </script>
 </body>
 </html>
