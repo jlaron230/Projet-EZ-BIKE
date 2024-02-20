@@ -10,7 +10,7 @@ function displayHeader() {
                 <a href="/index.html" class="green">Accueil</a>
                 <a href="/modeEmploi.html" class="green">Mode d'emploi</a>
                 <a href="/about.html" class="green">Trouver un vélib</a>
-                <a href="/calculateur.html" class="green roboto-bold">Calculateur</a>
+                <a href="/calculateur.html" class="green">Calculateur</a>
                 <a href="/contact.html" class="green">Contact</a>
             </div>
             <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
