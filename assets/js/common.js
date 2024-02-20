@@ -8,7 +8,7 @@ function displayHeader() {
             <div class="navbar-desktop roboto-regular">
                 <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
                 <a href="/index.html" class="green">Accueil</a>
-                <a href="/inventions.html" class="green">Mode d'emploi</a>
+                <a href="/modeEmploi.html" class="green">Mode d'emploi</a>
                 <a href="/about.html" class="green">Trouver un vélib</a>
                 <a href="/calculateur.html" class="green roboto-bold">Calculateur</a>
                 <a href="/contact.html" class="green">Contact</a>
