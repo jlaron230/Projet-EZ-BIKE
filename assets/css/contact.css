@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+}
+
+#form-style {
+    padding: 20px;
+    margin: auto;
+
+}
+
+.f-1-600 {
+    flex: 1 1 600px;
+}
+
+form {
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: gray 5px 5px 10px;
+    border-radius: 8px;
+}
+
+form input {
+    border: 0.2 solid rgb(224, 224, 224);
+    background-color: #ffffff9c;
+}
+
+.msg-btn-style {
+    max-height: 180px;
+}
+
+#message {
+    padding-bottom: 120px;
+}
+
+.input-footer {
+    gap: 16px;
+}
+
+button[type=submit] {
+    background-color: #009961;
+    color: white;
+    border-radius: 16px;
+    padding: 8px 12px;
+}
+
