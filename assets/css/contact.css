@@ -2,6 +2,24 @@ body {
     box-sizing: border-box;
 }
 
+.bg-img {
+    background-image: url(../../image/Calculateur.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circle-img {
+    background-image: url(../../image/cercle.svg);
+    max-height: 25vh;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.w-special {
+    max-width: 1020px;
+}
+
 #form-style {
     padding: 20px;
     margin: auto;
@@ -9,7 +27,7 @@ body {
 }
 
 .f-1-600 {
-    flex: 1 1 600px;
+    flex: 1 1 400px;
 }
 
 form {
