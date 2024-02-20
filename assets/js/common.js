@@ -18,7 +18,7 @@ function displayHeader() {
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/inventions.html">Mode d'emploi</a></li>
                 <li><a href="/about.html">Trouver un vélib</a></li>
-                <li><a href="/contact.html">Calculateur</a></li>
+                <li><a href="/calculateur.html">Calculateur</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
