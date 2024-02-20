@@ -33,6 +33,14 @@ function displayFooter() {
     const footer = document.createElement('footer')
     footer.innerHTML = `
         <p>&copy; 2024 Zéphyrus Plimplom</p>
+        <a href="/index.html" class="nav-brand">ZP</a>
+            <ul class="navbar-desktop">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/modeEmploi.html">Mode d'emploi</a></li>
+                <li><a href="/trouver_un_velib.html">Trouver un vélib</a></li>
+                <li><a href="/contact.html">Calculateur</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                </ul>
     `
     document.body.append(footer)
 }
