@@ -1,0 +1,59 @@
+/* ANCHOR - COLORS */
+
+.green {
+    color : #009961;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.black {
+    color: #000000;
+}
+
+/* ANCHOR - FONTS */
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.comfortaa-regular {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comfortaa-bold {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ANCHOR - HEADER */
+
+.navbar-desktop {
+    max-height: 90px;
+    display: flex;
+	justify-content: flex-start;
+	align-items: center;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-desktop a {
+    padding: 16px;
+    text-decoration: none;
+}
+

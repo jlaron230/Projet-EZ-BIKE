@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:wght@400;700&display=swap')
+    </style>
+    <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/calculateur.css">
 </head>
 <body>
     <main>
-        <section class="bg-img">
-            <h2>Calculateur d'émission de CO2 <br> Trajets en voiture / travail en voiture</h2>
-            <form action="" class="container">
-                <label for="distance">Distance parcourue par jour(en kilomètres)</label><br>
-                <input type="text" id="distance"><br>
-                <label for="days">Nombres de jours travillé par semaine</label><br>
-                <input type="text" id="days"><br>
-                <input type="submit" id="calculate" value="Calculer">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, esse porro officia harum numquam molestiae, enim laudantium eligendi recusandae expedita modi dolorum repudiandae sed sit rem quam, error magnam voluptate.</p>
-            </form>
+        <section class="container">
+            <div class="form-content">
+                <h2 class="title comfortaa-bold">Calculateur d'émission de CO2 <br> Trajets en voiture / travail en voiture</h2>
+                <form action="" class="form">
+                    <div class="text-input roboto-regular">
+                        <label for="distance">Distance parcourue par jour(en kilomètres)</label><br>
+                        <input type="text" id="distance"><br>
+                        <label for="days">Nombres de jours travillé par semaine</label><br>
+                        <input type="text" id="days"><br>
+                    </div>
+                    <input class="roboto-bold" type="submit" id="calculate" value="Calculer">
+                    <p class="description roboto-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, esse porro officia harum numquam molestiae, enim laudantium eligendi recusandae expedita modi dolorum repudiandae sed sit rem quam, error magnam voluptate.</p>
+                </form>
+            </div>
         </section>
     </main>
 
