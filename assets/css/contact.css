@@ -2,6 +2,24 @@ body {
     box-sizing: border-box;
 }
 
+.bg-img {
+    background-image: url(../../image/Calculateur.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circle-img {
+    background-image: url(../../image/cercle.svg);
+    max-height: 25vh;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.w-special {
+    max-width: 1020px;
+}
+
 #form-style {
     padding: 20px;
     margin: auto;
@@ -9,17 +27,16 @@ body {
 }
 
 .f-1-600 {
-    flex: 1 1 600px;
+    flex: 1 1 400px;
 }
 
 form {
     background-color: rgba(255,255,255,0.7);
-    box-shadow: gray 5px 5px 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
     border-radius: 8px;
 }
 
 form input {
-    border: 0.2 solid rgb(224, 224, 224);
     background-color: #ffffff9c;
 }
 
