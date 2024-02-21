@@ -5,7 +5,7 @@ function displayHeader() {
     header.innerHTML = `
     <header>
         <nav class="d-flex wrap" >
-            <div class="navbar-desktop roboto-regular wrap d-flex">
+            <div class="navbar-desktop minw-90 wrap d-flex jc-fs ai-c bs-op-0_2 g-2">
                 <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
                 <a href="/index.html" class="link-navbar">Accueil</a>
                 <a href="/modeEmploi.html" class="link-navbar">Mode d'emploi</a>
