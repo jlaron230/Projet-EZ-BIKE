@@ -7,11 +7,20 @@ body {
     display: flex;
     margin: auto;
     background-image: url(../../image/Calculateur.svg);
-    min-height: 70vh;
+    min-height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* .circle-img {
+    background-image: url(../../image/cercle.svg);
+    height: 100%;
+    width: 100%;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+} */
 
 /* Add styles to the form container */
 .form-content {
@@ -62,7 +71,8 @@ input[type = submit] {
     margin-top: 32px
 }
 
-#form-popup {
+#form-popup, #alert-popup {
+    min-width: 300px;
     display: none;
     margin: auto;
     padding: 8px 16px;
@@ -71,7 +81,7 @@ input[type = submit] {
     position: absolute;
 }
 
-#close {
+.close {
     float: right;
     border: none;
     background-color: #ffffff;
