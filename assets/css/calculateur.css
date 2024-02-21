@@ -7,10 +7,10 @@ body {
     display: flex;
     margin: auto;
     background-image: url(../../image/Calculateur.svg);
-    min-height: 55vh;
+    min-height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
 }
 
 .circle {
@@ -26,6 +26,7 @@ body {
 
 /* Add styles to the form container */
 .form-content {
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ body {
 
 .form {
     position: relative;
-    max-width: 800px;
+    width: 80%;
     min-width: 300px;
     padding: 32px 16px;
     border-radius: 8px;
