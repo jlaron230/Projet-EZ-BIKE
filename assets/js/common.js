@@ -5,7 +5,7 @@ function displayHeader() {
     header.innerHTML = `
     <header>
         <nav class="d-flex wrap" >
-            <div class="navbar-desktop roboto-regular wrap d-flex">
+            <div class="navbar-desktop minw-90 wrap d-flex jc-fs ai-c bs-op-0_2 g-2">
                 <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
                 <a href="/index.html" class="link-navbar">Accueil</a>
                 <a href="/modeEmploi.html" class="link-navbar">Mode d'emploi</a>
@@ -14,8 +14,9 @@ function displayHeader() {
                 <a href="/contact.html" class="link-navbar">Contact</a>
                 <a href="/comingSoon.html" class="link-navbar">C'est pour le ménage</a>
             </div>
+
             <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
-            <ul class="navbar-mobile d-flex d-none" id="navbar-mobile">
+            <ul class="navbar-mobile d-flex" id="navbar-mobile">
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/inventions.html">Mode d'emploi</a></li>
                 <li><a href="/about.html">Trouver un vélib</a></li>
@@ -59,4 +60,3 @@ function burgerMenu() {
 
 displayHeader()
 displayFooter()
-burgerMenu()

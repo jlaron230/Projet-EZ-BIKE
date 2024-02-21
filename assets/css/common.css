@@ -46,18 +46,22 @@
 
 /* ANCHOR - HEADER */
 
-.navbar-desktop {
-    min-height: 90px;
-    display: flex;
-	justify-content: flex-start;
-	align-items: center;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+@media screen and (max-width: 360px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
 }
 
-.navbar-desktop a {
-    padding: 16px;
-    text-decoration: none;
+@media screen and (min-width: 1366px) {
+    .navbar-mobile {
+        display: none;
+    }
 }
+    
 
 .link-navbar {
     text-decoration: none;
@@ -100,6 +104,10 @@
     min-height: 2rem;
 }
 
+.minw-90 {
+    min-height: 90px;
+}
+
 .w-100 {
     width: 100px;
 }
@@ -138,6 +146,9 @@
     margin-bottom: 3rem;
 }
 
+.mx-2{
+    margin: 0 2em;
+}
 
 .mx-2{
    margin: 0 2em;
@@ -149,19 +160,23 @@
     padding: 1em;
 }
 
-.px-1 {
+.p-2 {
+    padding: 2em;
+}
+
+.py-1 {
     padding: 1em 0;
 }
 
-.py-2 {
+.px-2 {
     padding: 0 2em;
 }
 
-.px-4 {
+.py-4 {
     padding: 4em 0;
 }
 
-.py-2 {
+.px-2 {
     padding: 0 2em;
 }
 
@@ -202,6 +217,10 @@
     justify-content: flex-end;
 }
 
+.jc-fs {
+    justify-content: flex-start;
+}
+
 /* ANCHOR - POSITION */
 
 .p-relative {
@@ -214,11 +233,15 @@
 
 /* ANCHOR - SHADOW */
 
-.bs-op4 {
+.bs-op-0_1 {
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bs-op-0_4 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-.bs-op2 {
+.bs-op-0_2 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
