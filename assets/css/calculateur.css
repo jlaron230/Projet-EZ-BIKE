@@ -22,6 +22,7 @@ body {
 }
 
 .form {
+    position: relative;
     max-width: 800px;
     min-width: 300px;
     padding: 32px 16px;
@@ -61,15 +62,13 @@ input[type = submit] {
     margin-top: 32px
 }
 
-.form-popup {
+#form-popup {
     display: none;
-    max-width: 600px;
     margin: auto;
     padding: 8px 16px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4); ;
-    position: relative;
-    bottom: 400px;
+    position: absolute;
 }
 
 #close {
@@ -77,4 +76,8 @@ input[type = submit] {
     border: none;
     background-color: #ffffff;
     color: #009961;
+}
+
+.fa-xmark {
+    font-size: 24px;
 }
