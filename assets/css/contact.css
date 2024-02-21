@@ -1,19 +1,27 @@
+/* * {
+    border: 1px dashed rgb(134, 67, 67);
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
 body {
     box-sizing: border-box;
 }
 
-.bg-img {
+#bg-img {
     background-image: url(../../image/Calculateur.svg);
-    background-position: center;
+    background-position: 50% 50%; /* axe X - axe Y*/
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
 }
 
-.circle-img {
-    background-image: url(../../image/cercle.svg);
-    max-height: 25vh;
-    background-position: right;
-    background-repeat: no-repeat;
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 15px solid green;
+    position: absolute;
+    right: -50px;
+    top: -50px;
 }
 
 .w-special {
@@ -53,9 +61,9 @@ form input {
 }
 
 button[type=submit] {
-    background-color: #009961;
+    background: linear-gradient(rgba(0, 153, 97, 1), rgba(0, 255, 21, 0.3));
     color: white;
     border-radius: 16px;
-    padding: 8px 12px;
+    padding: 6px 12px;
 }
 
