@@ -37,6 +37,27 @@ button{
     color: green;
 }
 
+
+
+.dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 360px) {
 
         main {

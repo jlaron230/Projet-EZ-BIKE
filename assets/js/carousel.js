@@ -4,20 +4,61 @@ console.log(0%9)
 // let array = ['😒','🤌','😂'];
 let array = ["./image/icon-windows.svg","./image/icon-documents.svg","./image/icon-idea.svg"];
 
-let bout = document.querySelectorAll("button");
-let i = 0;
+// let boutleft = document.querySelector(".left");
+// let boutright = document.querySelector(".right")
+// let i = 0;
 
-bout.addEventListener("click", function () {
-    
-  document.querySelector(".grimg").src = array[i % array.length]
-    
-    console.log(array[i%array.length]) 
 
-    i++
- 
+// boutleft.addEventListener("click", function () {
+//     document.querySelector(".grimg").src = array[i % array.length]
     
+//     console.log(array[i%array.length]) 
+//     i++
+// });
+
+// let current=i
+
+// boutright.addEventListener("click", function () {
+//   document.querySelector(".grimg").src = array[current % array.length]
+  
+//   console.log(array[i%array.length]) 
+//   i++
+// });
+
+
+let currentIndex = 0;
+
+document.querySelector('.left').addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + array.length) % array.length;
+    document.querySelector(".grimg").src = array[currentIndex];
 });
 
+document.querySelector('.right').addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % array.length;
+    document.querySelector(".grimg").src = array[currentIndex];
+});
+
+document.querySelector(".grimg").src = array[currentIndex];
+
+// let currentSlide = 0;
+// const slides = document.querySelectorAll('.img > div');
+
+// function showSlide(n) {
+//     slides[currentSlide].style.display = 'none';
+//     currentSlide = (n + slides.length) % slides.length;
+//     slides[currentSlide].style.display = 'block';
+// }
+
+// document.getElementById('prevBtn').addEventListener('click', () => {
+//   showSlide(currentSlide - 1);
+// });
+
+// document.getElementById('nextBtn').addEventListener('click', () => {
+//   showSlide(currentSlide + 1);
+// });
+
+// // Afficher la première diapositive au chargement de la page
+// showSlide(currentSlide);
 
 // const petitesImages = document.querySelectorAll(".vign");
 
