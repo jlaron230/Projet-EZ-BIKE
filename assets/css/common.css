@@ -42,6 +42,10 @@
     font-style: normal;
 }
 
+.ta-center {
+    text-align: center;
+}
+
 /* ANCHOR - HEADER */
 
 .navbar-desktop {
@@ -61,14 +65,102 @@
 
 /* ANCHOR - SIZING */
 
+.minw-300 {
+    min-width: 300px;
+}
+
 /* ANCHOR - MARGIN */
+
+.bs-bbox {
+    box-sizing: border-box;
+}
+
+.m-a {
+    margin: auto;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+.mt-4 {
+    margin-top: 4em;
+}
 
 /* ANCHOR - PADDING */
 
+.p-1 {
+    padding: 1em;
+}
+
+.px-1 {
+    padding: 1em 0;
+}
+
+.py-2 {
+    padding: 0 2em;
+}
+
+.px-4 {
+    padding: 4em 0;
+}
+
+.py-2 {
+    padding: 0 2em;
+}
+
 /* ANCHOR - FLEXBOX */
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.ai-center {
+    align-items: center;
+}
 
 /* ANCHOR - POSITION */
 
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
 /* ANCHOR - SHADOW */
 
+.bs-op4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bs-op2 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* ANCHOR - BORDER */
+
+.border-none {
+    border: none;
+}
+
+.br-4px {
+    border-radius: 4px;
+}
+
+.br-1 {
+    border-radius: 1em;
+}
+
+.br-2 {
+    border-radius: 2em;
+}
