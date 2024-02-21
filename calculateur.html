@@ -16,21 +16,21 @@
             <div class="form-content">
                 <h2 class="title comfortaa-bold">Calculateur d'émission de CO2 <br> Trajets en voiture / travail en voiture</h2>
                 <form action="" class="form">
+                    <div id="form-popup" class="roboto-regular">
+                        <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                        <p id="result-text"></p>
+                    </div>
                     <div class="text-input roboto-regular">
                         <label for="distance">Distance parcourue par jour(en kilomètres)</label><br>
-                        <input type="text" id="distance"><br>
+                        <input type="text" id="distance" class="distance"><br>
                         <label for="days">Nombres de jours travillé par semaine</label><br>
-                        <input type="text" id="days"><br>
+                        <input type="text" id="days" class="days-worked"><br>
                     </div>
                     <input class="roboto-bold" type="submit" id="calculate" value="Calculer">
                     <p class="description roboto-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, esse porro officia harum numquam molestiae, enim laudantium eligendi recusandae expedita modi dolorum repudiandae sed sit rem quam, error magnam voluptate.</p>
                 </form>
             </div>
         </section>
-        <div class="form-popup">
-            <button id="close"><i class="fa-solid fa-xmark"></i></button>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, minus ab itaque praesentium earum cupiditate mollitia distinctio incidunt repudiandae corrupti. Blanditiis culpa corporis tenetur cumque reiciendis porro labore ipsa veritatis.</p>
-        </div>
     </main>
 
     <script src="https://kit.fontawesome.com/a877892fcb.js" crossorigin="anonymous"></script>
