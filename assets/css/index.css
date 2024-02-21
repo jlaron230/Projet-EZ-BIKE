@@ -7,3 +7,48 @@
     border-bottom-left-radius: 30%;
     /* width: 20%; */
 }
+
+.navbar-toggle {
+    display: none;
+}
+
+.bg-btn {
+    background: var(--chocolate-color);
+    color: var(--creamy-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Mobile */
+/* @media screen and (min-width: 360px) {
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        height: auto;
+    } */
+
+    /* .navbar-desktop, .nav-brand {
+        display: none; */
+    /* } */
+
+    /* .navbar-toggle {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 10px;
+    }
+} */
