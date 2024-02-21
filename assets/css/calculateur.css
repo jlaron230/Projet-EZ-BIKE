@@ -7,11 +7,22 @@ body {
     display: flex;
     margin: auto;
     background-image: url(../../image/Calculateur.svg);
-    min-height: 70vh;
+    min-height: 55vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 140px;
+    border: 18px solid #009961;
+    position: absolute;
+    right: -80px;
+    top: -90px;
+}
+
 
 /* Add styles to the form container */
 .form-content {
@@ -47,7 +58,7 @@ input[type = text] {
     border: none;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 input[type = submit] {
@@ -62,7 +73,8 @@ input[type = submit] {
     margin-top: 32px
 }
 
-#form-popup {
+#form-popup, #alert-popup {
+    min-width: 300px;
     display: none;
     margin: auto;
     padding: 8px 16px;
@@ -71,7 +83,7 @@ input[type = submit] {
     position: absolute;
 }
 
-#close {
+.close {
     float: right;
     border: none;
     background-color: #ffffff;

@@ -57,3 +57,111 @@
     text-decoration: none;
 }
 
+/*ANCHOR - FOOTER */
+.d-flex {
+    display: flex;
+  }
+
+  .jc-sb {
+    justify-content: space-between;
+  }
+
+  .mt-3 {
+    margin-top: 3rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 3rem;
+  }
+
+  .border-s{
+    border-top: 5px solid var( --theme5);
+  }
+
+  .m-f{
+    margin: 0;
+  }
+
+  .g-2 {
+    gap: 2rem;
+  }
+
+  /* ANCHOR - COMMINGSOON */
+  .min-h {
+    min-height: 6rem;
+  }
+
+  .min-h-2 {
+    min-height: 2rem;
+  }
+
+  .time__Compteur{
+    background-color: var(--theme5);
+    width: 100px;
+    color: var(--light);
+  }
+
+  .jc-fe {
+    justify-content: flex-end;
+  }
+
+  .fd-column {
+    flex-direction: column;
+  }
+
+  .ai-c {
+    align-items: center;
+  }
+
+  .f-size{
+    font-size: 2em;
+    }
+
+    .compteur-time-title{
+        font-size: 70px;
+      }
+
+      a {
+        /* text-decoration: none; */
+        color: var(--accent);
+        font-weight: 600;
+      }
+    
+      a:hover {
+        /* text-decoration: none; */
+        color: var(--theme1);
+      }
+    
+      header,
+      footer {
+        background-color: var(--lighter-30);
+      }
+
+      footer{
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+       footer > div >ul>li > a{
+          color: #009961;
+          text-decoration: none;
+        }
+      
+        footer > div >ul>li :hover{
+          font-weight: 900;
+        }
+
+/* ANCHOR - FOOTER */
+
+/* ANCHOR - SIZING */
+
+/* ANCHOR - MARGIN */
+
+/* ANCHOR - PADDING */
+
+/* ANCHOR - FLEXBOX */
+
+/* ANCHOR - POSITION */
+
+/* ANCHOR - SHADOW */
+
+/* ANCHOR - BORDER */
