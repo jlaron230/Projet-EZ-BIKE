@@ -95,6 +95,7 @@
     min-height: 2rem;
   }
 
+  
   .time__Compteur{
     background-color: var(--theme5);
     width: 100px;
@@ -117,7 +118,7 @@
     font-size: 2em;
     }
 
-    .compteur-time-title{
+    .f-size-70{
         font-size: 70px;
       }
 
