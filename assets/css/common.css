@@ -45,7 +45,7 @@
 /* ANCHOR - HEADER */
 
 .navbar-desktop {
-    max-height: 90px;
+    min-height: 90px;
     display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -150,3 +150,18 @@
           font-weight: 900;
         }
 
+/* ANCHOR - FOOTER */
+
+/* ANCHOR - SIZING */
+
+/* ANCHOR - MARGIN */
+
+/* ANCHOR - PADDING */
+
+/* ANCHOR - FLEXBOX */
+
+/* ANCHOR - POSITION */
+
+/* ANCHOR - SHADOW */
+
+/* ANCHOR - BORDER */

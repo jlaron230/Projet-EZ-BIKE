@@ -4,8 +4,8 @@ function displayHeader() {
     const header = document.createElement('header')
     header.innerHTML = `
     <header>
-        <nav>
-            <div class="navbar-desktop roboto-regular">
+        <nav class="d-flex wrap" >
+            <div class="navbar-desktop roboto-regular wrap d-flex">
                 <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
                 <a href="/index.html" class="green">Accueil</a>
                 <a href="/modeEmploi.html" class="green">Mode d'emploi</a>
