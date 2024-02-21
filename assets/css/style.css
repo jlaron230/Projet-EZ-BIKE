@@ -134,7 +134,7 @@
     display: inline-block;
     text-decoration: none;
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 20px;
     border: none;
     background-color: var(--theme1);
     color: var(--dark);
@@ -618,13 +618,15 @@
     flex: 1 1 150px;
   }
 
-  .f-m {
+  .f-1-300 {
     flex: 1 1 300px;
   }
 
   .f-l {
     flex: 1 1 600px;
   }
+
+
 
   /* !SECTION FLEX*/
 }
