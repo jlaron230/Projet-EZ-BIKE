@@ -9,19 +9,19 @@ body {
 
 #bg-img {
     background-image: url(../../image/Calculateur.svg);
-    background-position: 50% 50%; /* axe X - axe Y*/
+    background-position: 42% 6%; /* axe X - axe Y*/
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 80%;
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: 15px solid green;
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    border: 18px solid green;
     position: absolute;
     right: -50px;
-    top: -50px;
+    top: -60px;
 }
 
 .w-special {
@@ -61,9 +61,47 @@ form input {
 }
 
 button[type=submit] {
-    background: linear-gradient(rgba(0, 153, 97, 1), rgba(0, 255, 21, 0.3));
+    background-color: #009961;
     color: white;
     border-radius: 16px;
     padding: 6px 12px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 835px) {
+    #bg-img {
+        background-image: url(../../image/Calculateur.svg);
+        background-position: 40% 50%; /* axe X - axe Y*/
+        background-repeat: repeat-x;
+        background-size: 10%;
+    }
+    
+    .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 7px dashed rgba(0, 255, 21, 0.1);
+        position: absolute;
+        right: 20px;
+        top: 200px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1730px) {
+    #bg-img {
+        background-image: url(../../image/Calculateur.svg);
+        background-position: 10% 0%; /* axe X - axe Y*/
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 140px;
+        border: 17px solid rgba(0, 128, 0, 0.8);
+        position: absolute;
+        right: -90px;
+        top: -70px;
+    }
 }
 
