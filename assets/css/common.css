@@ -46,6 +46,23 @@
 
 /* ANCHOR - HEADER */
 
+@media screen and (max-width: 360px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+    
+
 .link-navbar {
     text-decoration: none;
     color: var(--theme1);

@@ -13,8 +13,9 @@ function displayHeader() {
                 <a href="/calculateur.html" class="link-navbar">Calculateur</a>
                 <a href="/contact.html" class="link-navbar">Contact</a>
             </div>
+
             <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
-            <ul class="navbar-mobile d-flex d-none" id="navbar-mobile">
+            <ul class="navbar-mobile d-flex" id="navbar-mobile">
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/inventions.html">Mode d'emploi</a></li>
                 <li><a href="/about.html">Trouver un vélib</a></li>
@@ -56,4 +57,3 @@ function burgerMenu() {
 
 displayHeader()
 displayFooter()
-burgerMenu()
