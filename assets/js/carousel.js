@@ -26,19 +26,31 @@ let array = ["./image/icon-windows.svg","./image/icon-documents.svg","./image/ic
 // });
 
 
+const dots = document.querySelectorAll(".dot");
+
 let currentIndex = 0;
+
+
 
 document.querySelector('.left').addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + array.length) % array.length;
     document.querySelector(".grimg").src = array[currentIndex];
+    dots.forEach(dot => dot.style.backgroundColor = "");
+    dots[currentIndex].style.backgroundColor = "green";
 });
 
 document.querySelector('.right').addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % array.length;
     document.querySelector(".grimg").src = array[currentIndex];
+    dots.forEach(dot => dot.style.backgroundColor = "");
+    dots[currentIndex].style.backgroundColor = "green";
 });
 
-document.querySelector(".grimg").src = array[currentIndex];
+
+dots[currentIndex].style.backgroundColor = "green";
+// Mettre en surbrillance le point correspondant à l'index actuel
+
+
 
 // let currentSlide = 0;
 // const slides = document.querySelectorAll('.img > div');
