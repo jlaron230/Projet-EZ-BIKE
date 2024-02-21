@@ -32,3 +32,28 @@ img{
     box-shadow: 5px 5px 15px 5px;
 }
 
+button{
+    background: none;
+    color: green;
+}
+
+@media (max-width: 360px) {
+
+        main {
+            justify-content: center;
+        }
+    
+        .card {
+            width: auto;
+            height: auto;
+            margin: 10px; 
+        }
+    
+       .hide{
+        display: none;
+       }
+    }
+    
+
+
+
