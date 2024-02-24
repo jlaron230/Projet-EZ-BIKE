@@ -54,6 +54,5 @@ function burgerMenu() {
     navbarMobile.classList.toggle('d-none')
 }
 
-displayHeader()
-displayFooter()
-burgerMenu()
+displayHeader();
+displayFooter();
