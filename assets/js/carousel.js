@@ -29,6 +29,12 @@ let array = ["./image/icon-windows.svg","./image/icon-documents.svg","./image/ic
 const dots = document.querySelectorAll(".dot");
 
 let currentIndex = 0;
+let left=document.querySelector('.left')
+let right=document.querySelector('.right')
+
+
+
+
 
 
 
@@ -37,6 +43,11 @@ document.querySelector('.left').addEventListener("click", function () {
     document.querySelector(".grimg").src = array[currentIndex];
     dots.forEach(dot => dot.style.backgroundColor = "");
     dots[currentIndex].style.backgroundColor = "green";
+    left.classList.add('active')
+    console.log(left);
+    setTimeout(function() {
+        left.classList.remove('active');
+      }, 150);
 });
 
 document.querySelector('.right').addEventListener("click", function () {
@@ -44,7 +55,14 @@ document.querySelector('.right').addEventListener("click", function () {
     document.querySelector(".grimg").src = array[currentIndex];
     dots.forEach(dot => dot.style.backgroundColor = "");
     dots[currentIndex].style.backgroundColor = "green";
+    right.classList.add('active')
+    setTimeout(function() {
+        right.classList.remove('active');
+      }, 150);
+    
 });
+
+
 
 
 dots[currentIndex].style.backgroundColor = "green";
