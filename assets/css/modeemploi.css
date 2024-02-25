@@ -27,7 +27,7 @@ img{
 
 button{
     background: none;
-    color: green;
+    color: rgb(28, 163, 28);
 }
 
 .vign{
@@ -55,7 +55,7 @@ button{
 .dot {
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: rgb(245, 248, 245);
     margin: 8px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -79,7 +79,7 @@ button{
 }
 
 .btn.active {
-    border: 2px solid rgb(37, 182, 207); /* Couleur de la bordure */
+    border: 3px solid rgb(37, 182, 207); /* Couleur de la bordure */
     border-radius: 50%; /* Pour obtenir un cercle */
   }
 
@@ -89,6 +89,15 @@ display:none;
 }
 .dt{
     display: none;
+}
+
+.gray{
+    color: rgb(204, 226, 204)
+}
+
+i{
+    font-size: 30px;
+    font-weight: bold;
 }
 @media (max-width: 360px) {
 
