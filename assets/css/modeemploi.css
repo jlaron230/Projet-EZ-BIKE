@@ -17,15 +17,9 @@ img{
 
 .left{
     left: 0;
+  
 }
-.card{
 
-    width: 400px;
-    height: 400px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
 
 .card:hover{
     box-shadow: 5px 5px 15px 5px;
@@ -33,25 +27,35 @@ img{
 
 button{
     background: none;
-    color: green;
+    color: rgb(28, 163, 28);
 }
 
+.vign{
+    
+    width: 150px;
+    height: 150px;
+}
 
-
+.card{
+    width: 100px;
+    height: 100px;
+}
 .dots {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 16px;
+    bottom: 0px;
     display: flex;
     gap: 1rem;
     justify-content: center;
+    
 }
+
 
 .dot {
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: rgb(245, 248, 245);
     margin: 8px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -66,7 +70,18 @@ button{
     align-items: center;
     align-content: stretch;
     position: relative;
+
+    max-width: 170px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+   padding-right: 20px;
+   
 }
+
+.btn.active {
+    border: 3px solid rgb(37, 182, 207); /* Couleur de la bordure */
+    border-radius: 50%; /* Pour obtenir un cercle */
+  }
 
 
 .btn{
@@ -74,6 +89,15 @@ display:none;
 }
 .dt{
     display: none;
+}
+
+.gray{
+    color: rgb(204, 226, 204)
+}
+
+i{
+    font-size: 30px;
+    font-weight: bold;
 }
 @media (max-width: 360px) {
 
@@ -94,6 +118,7 @@ display:none;
         position:absolute;
         top:50%;
         display: block;
+        border: none;
     }
 
 .dt{
@@ -101,7 +126,7 @@ display:none;
 
 
 }
-                                         }
+    }
     
 
 
