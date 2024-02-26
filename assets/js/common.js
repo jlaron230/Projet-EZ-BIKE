@@ -16,7 +16,7 @@ function displayHeader() {
             </div>
 
             <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
-            <ul class="navbar-mobile d-flex" id="navbar-mobile">
+            <ul class="navbar-mobile" id="navbar-mobile">
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/inventions.html">Mode d'emploi</a></li>
                 <li><a href="/about.html">Trouver un vélib</a></li>
