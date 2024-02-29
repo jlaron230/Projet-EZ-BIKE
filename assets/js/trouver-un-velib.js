@@ -2,45 +2,61 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         const apikey="?&key=MjE0ZDNmMGEtNGFkZS00M2FlLWFmMWItZGNhOTZhMWQyYzM2"
+        const http="https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/"
+
+
+
     
-        var map = L.map('map').setView([43.300000, 5.400000], 13);
-    
-    
-        var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //_____________________________________________________________________________________________________
+
+        var map = L.map('map').setView([43.300000, 5.400000], 13);   //Marseille
+
+        // Crée une carte. ne pas réutiliser ou le script ce !!!BLOC!!!
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributeurs'
         }).addTo(map);
-    
+
+        //________________________________________________________________________________________________________
+
+
+
+        
+        
     
     
         async function fetchvelo() {
-            const veloresponse = await fetch(`https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/station_status.json${apikey}`)
-            const velodata = await veloresponse.json()
+            const availableresponse = await fetch(`${http}station_status.json${apikey}`)
+            const availabledata = await availableresponse.json()
     
-            const station = await fetch(`https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/station_information.json${apikey}`)
-            const stationdata = await station.json()
+            const inforesponse = await fetch(`${http}station_information.json${apikey}`)
+            const infondata = await inforesponse.json()
     
     
-            console.log(velodata);
-            console.log(stationdata);
+            //______________________________________
+            console.log(availabledata);
+            console.log(infondata);
     
-            console.log(velodata.data.stations);
-            console.log(stationdata.data.stations);
+            console.log(availabledata.data.stations);
+            console.log(infondata.data.stations);
+            //________________________________________
     
-            stationdata.data.stations.forEach(element => {
+
+
+            infondata.data.stations.forEach(element => {
                 let latitude = element.lat;
                 let longitude = element.lon;
     
-                affichepoint(latitude, longitude);
-                
+                affichepoint(latitude, longitude);  
             });
         }
-    
-        
+      
         function affichepoint(lat, lon) {
             L.marker([lat, lon]).addTo(map);
         };
     
+
+        
     
         fetchvelo()
     })
