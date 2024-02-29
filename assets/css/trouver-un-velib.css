@@ -1,4 +1,12 @@
+.top{
+    background-color: green;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 20px;
+   
 
+}
 .search {
     display: table;
     input {
