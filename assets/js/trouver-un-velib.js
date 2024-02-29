@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', function () {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributeurs'
     }).addTo(map);
+    map.setView([43.300000, 5.400000], 13);
 });
