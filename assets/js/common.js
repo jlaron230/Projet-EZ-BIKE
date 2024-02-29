@@ -40,10 +40,8 @@ function displayHeader() {
             <li><a class="topnav_link" href="comingSoon.html">C'est pour le ménage</a></li>
         </ul>
         </nav>
-      </div>
-    </div>
-            </header>
-            `
+    </header>
+    `
     document.body.prepend(header)
 }
 
