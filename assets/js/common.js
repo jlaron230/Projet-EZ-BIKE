@@ -12,15 +12,17 @@ function displayHeader() {
                 <a href="/about.html" class="link-navbar">Trouver un vélib</a>
                 <a href="/calculateur.html" class="link-navbar">Calculateur</a>
                 <a href="/contact.html" class="link-navbar">Contact</a>
+                <a href="/comingSoon.html" class="link-navbar">C'est pour le ménage</a>
             </div>
 
             <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
-            <ul class="navbar-mobile d-flex" id="navbar-mobile">
+            <ul class="navbar-mobile" id="navbar-mobile">
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/inventions.html">Mode d'emploi</a></li>
                 <li><a href="/about.html">Trouver un vélib</a></li>
                 <li><a href="/calculateur.html">Calculateur</a></li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/comingSoon.html">C'est pour le ménage</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +34,7 @@ function displayHeader() {
 function displayFooter() {
     console.log('displayFooter')
     const footer = document.createElement('footer')
-    footer.classList.add('mb-3', 'border-s')
+    footer.classList.add('mb-3', 'border-s', 'mt-3')
     footer.innerHTML = `
         <div class="d-flex jc-sb mt-3 ">
         <p class="m-f">&copy; 2024 Zéphyrus Plimplom</p>
@@ -42,6 +44,7 @@ function displayFooter() {
                 <li><a href="/trouver_un_velib.html" class="link-footer">Trouver un vélib</a></li>
                 <li><a href="/contact.html" class="link-footer">Calculateur</a></li>
                 <li><a href="/contact.html" class="link-footer">Contact</a></li>
+                <li><a href="/comingSoon.html" class="link-footer">C'est pour le ménage</a></li>
                 </ul>
             </div>
     `
@@ -55,5 +58,5 @@ function burgerMenu() {
     navbarMobile.classList.toggle('d-none')
 }
 
-displayHeader()
-displayFooter()
+displayHeader();
+displayFooter();
