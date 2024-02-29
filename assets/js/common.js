@@ -3,7 +3,6 @@ function displayHeader() {
     console.log('displayHeader')
     const header = document.createElement('header')
     header.innerHTML = `
-    <header>
         <nav class="d-flex wrap" >
             <div id="navbar-desktop" class="navbar-desktop minw-90 wrap d-flex jc-fs ai-c bs-op-0_2 g-2">
                 <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
@@ -25,7 +24,6 @@ function displayHeader() {
                 <li><a href="/comingSoon.html">C'est pour le ménage</a></li>
             </ul>
         </nav>
-    </header>
     `
     document.body.prepend(header)
 }
