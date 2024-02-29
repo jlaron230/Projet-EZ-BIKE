@@ -4,29 +4,46 @@ function displayHeader() {
     const header = document.createElement('header')
     header.innerHTML = `
     <header>
-        <nav class="d-flex wrap" >
-            <div id="navbar-desktop" class="navbar-desktop minw-90 wrap d-flex jc-fs ai-c bs-op-0_2 g-2">
-                <a href="/index.html" class="nav-brand"><img src="../image/ez-bike_logo.svg" style="width: 150px"></a>
-                <a href="/index.html" class="link-navbar">Accueil</a>
-                <a href="/modeEmploi.html" class="link-navbar">Mode d'emploi</a>
-                <a href="/trouver-un-velib.html" class="link-navbar">Trouver un vélib</a>
-                <a href="/calculateur.html" class="link-navbar">Calculateur</a>
-                <a href="/contact.html" class="link-navbar">Contact</a>
-                <a href="/comingSoon.html" class="link-navbar">C'est pour le ménage</a>
-            </div>
+    <div id="root" class="header-box">
+      <div id="topnav" class="topnav">
+        <a id="home_link" class="topnav_link" href="index.html"><img src="../image/ez-bike_logo.svg" alt="Logo"></a>
 
-            <button class="navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()">ZP</button>
-            <ul class="navbar-mobile" id="navbar-mobile">
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/trouver-un-velib.html">Mode d'emploi</a></li>
-                <li><a href="/about.html">Trouver un vélib</a></li>
-                <li><a href="/calculateur.html">Calculateur</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/comingSoon.html">C'est pour le ménage</a></li>
-            </ul>
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="index.html">Accueil</a>
+          <a class="topnav_link" href="modeEmploi.html">Mode d'emploi</a>
+          <a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a>
+          <a class="topnav_link" href="calculateur.html">Calculateur</a>
+          <a class="topnav_link" href="contact.html">Contact</a>
+          <a class="topnav_link" href="comingSoon.html">C'est pour le ménage</a>
         </nav>
-    </header>
-    `
+
+        <a
+          id="topnav_hamburger_icon"
+          href="#"
+          onclick="showResponsiveMenu()"
+        >
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li><a class="topnav_link" href="index.html">Accueil</a></li>
+            <li><a class="topnav_link" href="modeEmploi.html">Mode d'emploi</a></li>
+            <li><a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a></li>
+            <li><a class="topnav_link" href="calculateur.html">Calculateur</a></li>
+            <li><a class="topnav_link" href="contact.html">Contact</a></li>
+            <li><a class="topnav_link" href="comingSoon.html">C'est pour le ménage</a></li>
+        </ul>
+        </nav>
+      </div>
+    </div>
+            </header>
+            `
     document.body.prepend(header)
 }
 
@@ -36,7 +53,7 @@ function displayFooter() {
     const footer = document.createElement('footer')
     footer.classList.add('mb-3', 'border-s', 'mt-3')
     footer.innerHTML = `
-        <div class="d-flex jc-sb mt-3 ">
+        <div class="d-flex jc-sb mt-3 wrap">
         <p class="m-f">&copy; 2024 Zéphyrus Plimplom</p>
             <ul class="footer-desktop m-f d-flex g-2">
                 <li><a href="/index.html" class="link-footer">Accueil</a></li>
@@ -52,29 +69,20 @@ function displayFooter() {
 }
 
 // Burger menu
-function burgerMenu() {
-    window.addEventListener("DOMContentLoaded", (event) => {é
-        let menuDesktop = document.getElementById('navbar-desktop');
-        let menuMobile = document.getElementById('navbar-mobile');
-
-        // au chargement de la page
-        window.onload = function () {
-            // on teste la largeur de la fenêtre
-            var ww = window.innerWidth; // en pixels
-            menuMobile.style.display = (ww > 980) ? '' : 'none';
-            menuDesktop.style.display = (ww < 979) ? 'none' : '';
-        };
-
-        // au redimensionnement de la fenêtre
-        window.onresize = function () {
-            // on teste la largeur de la fenêtre
-            var ww = window.innerWidth; // en pixels
-            menuMobile.style.display = (ww > 980) ? '' : 'none';
-            menuDesktop.style.display = (ww < 979) ? 'none' : '';
-        };
+function showResponsiveMenu() {
+    var menu = document.getElementById("topnav_responsive_menu");
+    var icon = document.getElementById("topnav_hamburger_icon");
+    var root = document.getElementById("root");
+    if (menu.className === "") {
+        menu.className = "open";
+        icon.className = "open";
+        root.style.overflowY = "hidden";
+    } else {
+        menu.className = "";
+        icon.className = "";
+        root.style.overflowY = "";
     }
-    )
-};
+}
 
 displayHeader();
 displayFooter();
