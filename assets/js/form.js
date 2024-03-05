@@ -7,9 +7,9 @@ btnCalcul.addEventListener("click", function(e){
     e.preventDefault();
     openForm();
 
-    let distance = document.querySelector(".distance");
+    let distance = document.getElementById("distance");
     let distanceValue = distance.value;
-    let days = document.querySelector(".days-worked");
+    let days = document.getElementById("days");
     let daysValue = days.value;
 
     function calcul() {

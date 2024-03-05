@@ -1,74 +1,13 @@
-body {
-    box-sizing: border-box;
-    margin: auto;
-}
 
 .container {
-    display: flex;
-    margin: auto;
     background-image: url(../../image/Calculateur.svg);
-    min-height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 
-.circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 140px;
-    border: 18px solid #009961;
-    position: absolute;
-    right: -80px;
-    top: -90px;
-}
-
 
 /* Add styles to the form container */
-.form-content {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form {
-    position: relative;
-    width: 80%;
-    min-width: 300px;
-    padding: 32px 16px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.text-input {
-    margin-bottom: 16px;
-}
-
-input[type = text] {
-    width: 90%;
-    margin: 8px 0;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-input[type = submit] {
-    color: white;
-    background-color: #009961;
-    border: none;
-    border-radius: 16px;
-    padding: 8px 16px;
-}
 
 .description {
     margin-top: 32px
