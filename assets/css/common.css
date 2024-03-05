@@ -450,6 +450,7 @@
   gap: 2rem;
 }
 
+
 /* ANCHOR - FLEXBOX */
 
 .d-flex {
@@ -462,6 +463,10 @@
 
 .fd-column {
   flex-direction: column;
+}
+
+.flex-w {
+  flex-wrap: wrap;
 }
 
 .ai-c {
