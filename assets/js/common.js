@@ -15,6 +15,7 @@ function displayHeader() {
           <a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a>
           <a class="topnav_link" href="calculateur.html">Calculateur</a>
           <a class="topnav_link" href="contact.html">Contact</a>
+          <a class="topnav_link" href="comingSoon.html">Une page qui sert à rien</a>
         </nav>
 
         <a
@@ -36,6 +37,7 @@ function displayHeader() {
             <li><a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a></li>
             <li><a class="topnav_link" href="calculateur.html">Calculateur</a></li>
             <li><a class="topnav_link" href="contact.html">Contact</a></li>
+            <li><a class="topnav_link" href="comingSoon.html">Une page qui sert à rien</a></li>
             
         </ul>
         </nav>
@@ -57,7 +59,7 @@ function displayFooter() {
                 <li><a href="/trouver-un-velib.html" class="link-footer">Trouver un vélib</a></li>
                 <li><a href="/contact.html" class="link-footer">Calculateur</a></li>
                 <li><a href="/contact.html" class="link-footer">Contact</a></li>
-               
+                <li><a class="link-footer" href="/comingSoon.html">Une page qui sert à rien</a></li>
                 </ul>
             </div>
     `
