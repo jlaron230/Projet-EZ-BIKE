@@ -94,7 +94,6 @@
 
   /* show responsive menu and position at the right of the screen */
   #topnav_responsive_menu {
-    display: block;
     position: absolute;
     margin: 0;
     right: 0;
@@ -102,6 +101,9 @@
     width: 100vw;
     height: 100vh;
     z-index: 99;
+
+  }
+  #topnav_responsive_menu {
     transform-origin: 0% 0%;
     transform: translate(200%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -121,6 +123,7 @@
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   #topnav_responsive_menu li {
@@ -136,10 +139,18 @@
   }
 
   /* And let's slide it in from the right */
-  #topnav_responsive_menu.open {
-    transform: none;
+  #topnav_responsive_menu {
+
     position: fixed;
+   
   }
+  #topnav_responsive_menu.open{
+display: block;
+transform: none;
+
+  }
+
+
 
   /* ******************** HAMBURGER ICON ******************** */
   /* define size and position of the hamburger link */

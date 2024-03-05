@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dot.dataset.index = index;
       dotsContainer.appendChild(dot);
     });
-  
+
     let dots = document.querySelectorAll(".dot");
   
     // Function to show a specific item
