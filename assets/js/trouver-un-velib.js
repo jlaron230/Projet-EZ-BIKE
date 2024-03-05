@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const apikey = "?&key=MjE0ZDNmMGEtNGFkZS00M2FlLWFmMWItZGNhOTZhMWQyYzM2";
     const http = "https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/";
     let search = document.querySelector('.search');
+    let btn = document.querySelector(".top");
+
+    btn.addEventListener("click", function (e) {
+        btn = document.querySelector(".top");
+    })
 
     var LeafIcon = L.Icon.extend({
         options: {

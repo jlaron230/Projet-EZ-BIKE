@@ -78,7 +78,14 @@
 #topnav_responsive_menu {
   display: none;
 }
-
+@media screen and (min-width: 1320px) {
+  /* ANCHOR Sreen Main */
+.ScreenMain{
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
 @media only screen and (max-width: 985px) {
   /* hide classic menu */
   #topnav_menu {
@@ -334,6 +341,7 @@ transform: none;
 .h-120 {
   height: 120px;
 }
+
 
 /* Ajout Emmanuelle 05/03/24 */
 
