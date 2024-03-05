@@ -4,3 +4,7 @@
     background-repeat: no-repeat;
     background-size: 80%;
 }
+
+.f-1-600 {
+    flex: 1 1 400px;
+}
