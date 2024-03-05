@@ -4,16 +4,6 @@
 } */
 
 
-.circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 140px;
-    border: 18px solid green;
-    position: absolute;
-    right: -50px;
-    top: -60px;
-}
-
 
 #form-style {
     padding: 20px;
@@ -63,13 +53,7 @@ button[type=submit] {
     }
     
     .circle {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        border: 7px dashed rgba(0, 255, 21, 0.1);
-        position: absolute;
-        right: 20px;
-        top: 200px;
+        display: none;
     }
 }
 
@@ -85,7 +69,7 @@ button[type=submit] {
         width: 140px;
         height: 140px;
         border-radius: 140px;
-        border: 17px solid rgba(0, 128, 0, 0.8);
+        border: 17px solid #009961;
         position: absolute;
         right: -90px;
         top: -70px;
