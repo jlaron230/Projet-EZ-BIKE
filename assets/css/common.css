@@ -801,10 +801,6 @@ form {
   border-radius: 8px;
 }
 
-form input {
-  background-color: #ffffff9c;
-}
-
 .msg-btn-style {
   max-height: 180px;
 }
@@ -893,7 +889,8 @@ button[type=submit] {
     box-shadow: 5px 5px 15px 5px;
 }
 
-button {
+.btn-carousel {
+  display: none;
   background: none;
   color: rgb(28, 163, 28);
 }
@@ -941,9 +938,6 @@ button {
   border-radius: 50%;
 }
 
-.btn {
-  display: none;
-}
 .dt {
   display: none;
 }
@@ -970,7 +964,8 @@ i {
   .hide {
     display: none;
   }
-  .btn {
+
+  .btn-carousel {
     position: absolute;
     top: 50%;
     display: block;
