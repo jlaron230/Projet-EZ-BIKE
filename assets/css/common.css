@@ -748,3 +748,18 @@ input:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+/* 
+____________________________________________caculateur css________________________________ */
+
+.bg-img {
+  background-image: url(../../image/Calculateur.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+
+/* page 404 __________________________________________________________________________________ */
+
+
+
