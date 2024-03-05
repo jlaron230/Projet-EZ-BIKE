@@ -1,67 +1,52 @@
-main{
-    
-
-    
+.bubulle {
+  position: absolute;
+  z-index: -1;
+}
+.right {
+  right: 0;
 }
 
-img{
-}
-.bubulle{
-    position: absolute;
-    z-index: -1
-
-}
-.right{
-    right: 0;
+.left {
+  left: 0;
 }
 
-.left{
-    left: 0;
-  
+.card {
+  width: auto;
+  height: auto;
 }
 
-.card{
-    width: 100px;
-    height: 100px;
-    
-}
-
-.vign:hover{
-    border-radius: 8px;
+.card:hover{
     box-shadow: 5px 5px 15px 5px;
-   padding: 10px;
 }
 
-button{
-    background: none;
-    color: rgb(28, 163, 28);
+button {
+  background: none;
+  color: rgb(28, 163, 28);
 }
 
-.vign{
-    
-    width: 150px;
-    height: 150px;
+.vign {
+  width: auto;
+  height: auto;
+  padding: 32px 0 0 32px;
 }
 
 .dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
-
 .dot {
-    width: 16px;
-    height: 16px;
-    background-color: rgb(245, 248, 245);
-    margin: 8px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 16px;
+  height: 16px;
+  background-color: rgb(245, 248, 245);
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .carousel{
@@ -73,74 +58,60 @@ button{
     align-items: center;
     align-content: stretch;
     position: relative;
-    margin: 100px;
 
 
    
 }
 
 .btn.active {
-    border: 3px solid rgb(37, 182, 207); 
-    border-radius: 50%; 
-  }
-
-
-.btn{
-display:none;
-}
-.dt{
-    display: none;
+  border: 3px solid rgb(37, 182, 207);
+  border-radius: 50%;
 }
 
-.gray{
-    color: rgb(204, 226, 204)
+.btn {
+  display: none;
+}
+.dt {
+  display: none;
 }
 
-i{
-    font-size: 30px;
-    font-weight: bold;
+.gray {
+  color: rgb(204, 226, 204);
+}
+
+i {
+  font-size: 30px;
+  font-weight: bold;
 }
 @media (max-width: 360px) {
+  main {
+    justify-content: center;
+  }
 
-        main {
-            justify-content: center;
-        }
-    
-        .card {
-            width: auto;
-            height: auto;
-            margin: 10px; 
-        }
-    
-       .hide{
-        display: none;
-       }
-       .btn{
-        position:absolute;
-        top:50%;
-        display: block;
-        border: none;
-    }
+  .card {
+    width: auto;
+    height: auto;
+    margin: 30px;
+  }
 
-.dt{
+  .hide {
+    display: none;
+  }
+  .btn {
+    position: absolute;
+    top: 50%;
+    display: block;
+    border: none;
+  }
+
+  .dt {
     display: inherit;
+  }
 
-
-}
-
-
-.carousel{
+  .carousel {
     max-width: 170px;
-   padding-left: 20px;
-   padding-bottom: 10px;
-   padding-right: 20px;
-
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+  }
 }
-
-
-
-    }
-    
-
-
-

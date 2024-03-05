@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link
@@ -15,11 +15,11 @@
     />
     <title>Contact</title>
   </head>
-  <body>
+  <body class="m-a bs-bbox">
     <main id="bg-img">
       <div class="d-flex fd-column ai-c w-special m-auto">
         <h1>Contactez-nous</h1>
-        <form id="form-style" class="d-flex wrap m-auto g-3 relative">
+        <form id="form-style" class="d-flex wrap m-auto g-3 p-relative py-2 px-1 br-8px bg-color bs-op-0_4">
           <div class="f-1-600">
             <label for="name">Votre nom</label>
             <input
@@ -28,6 +28,7 @@
               name="name"
               placeholder="Nom"
               autocomplete="on"
+              class="p-8px my-8px border-none br-4px bg-color bs-op-0_2 w-input"
             />
           </div>
           <div class="f-1-600">
@@ -38,6 +39,7 @@
               name="firstName"
               placeholder="Prénom"
               autocomplete="on"
+              class="p-8px my-8px border-none br-4px bg-color bs-op-0_2 w-input"
             />
           </div>
           <div class="f-1-600">
@@ -48,6 +50,7 @@
               name="phoneNumber"
               placeholder="Numéro"
               autocomplete="on"
+              class="p-8px my-8px border-none br-4px bg-color bs-op-0_2 w-input"
             />
           </div>
           <div class="f-1-600">
@@ -58,6 +61,7 @@
               name="email"
               placeholder="Email"
               autocomplete="on"
+              class="p-8px my-8px border-none br-4px bg-color bs-op-0_2 w-input"
             />
           </div>
           <div class="d-flex fd-column wrap input-footer">
@@ -69,10 +73,11 @@
                 name="message"
                 placeholder="Message"
                 autocomplete="off"
+                class="p-8px my-8px border-none br-4px bg-color bs-op-0_2 w-input-msg"
               />
             </div>
             <div class="">
-              <button type="submit">Envoyer</button>
+              <button class="btn" type="submit">Envoyer</button>
             </div>
             <div>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sint
