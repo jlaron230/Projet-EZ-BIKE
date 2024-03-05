@@ -26,8 +26,10 @@ img{
     
 }
 
-.card:hover{
+.vign:hover{
+    border-radius: 8px;
     box-shadow: 5px 5px 15px 5px;
+   padding: 10px;
 }
 
 button{
@@ -71,6 +73,7 @@ button{
     align-items: center;
     align-content: stretch;
     position: relative;
+    margin: 100px;
 
 
    
