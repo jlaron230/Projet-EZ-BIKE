@@ -653,10 +653,12 @@
   .p-0 {
     padding: 0;
   }
-footer{
+
+/* footer{
   margin-left: 15px;
   margin-right: 15px;
-}
+} */
+
  footer > div >ul>li > a{
     color: #009961;
     text-decoration: none;

@@ -44,8 +44,8 @@
 
 /* ANCHOR - HEADER */
 .header-box {
-    background-color: rgba(255,255,255,0.7);
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .topnav {
   display: flex;
@@ -129,6 +129,8 @@
     white-space: nowrap;
     color: #009961;
     text-decoration: none;
+    width: 100%;
+    height: 58px;
   }
 
   /* And let's slide it in from the right */
@@ -224,9 +226,18 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+
+  .link-footer {
+    display: block;
+  }
 }
 
 /*ANCHOR - FOOTER */
+.m-l-and-r {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .link-footer {
   color: #009961;
   text-decoration: none;
@@ -420,5 +431,5 @@
 }
 
 .border-b {
-    border-bottom: 2px solid var(--theme1);
+  border-bottom: 2px solid var(--theme1);
 }
