@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const apikey="?&key=MjE0ZDNmMGEtNGFkZS00M2FlLWFmMWItZGNhOTZhMWQyYzM2"
         const http="https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/"
-    
+        let search = document.querySelector('.search')
 //_________________________________________________________________________________________________________________________________________
 
-
+//_________________________________________________________________________________________________________________________________________
         // déclaration des icones
         var LeafIcon = L.Icon.extend({
             options: {
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //________________________________________________________________________________________________________________________________________
 
-  
 
  function affichepoint(lat, lon,i,availabledata) {
     let num=availabledata.data.stations[i].num_bikes_available
@@ -52,7 +51,11 @@ else if (num<3){
  }
           }
 
-function popup(marker,infodata,i,availabledata) {marker.bindPopup(`<b>${infodata.data.stations[i].name}</b><br>${availabledata.data.stations[i].num_bikes_available} vélo disponible`).openPopup();}
+function popup(marker,infodata,i,availabledata) {
+    marker.bindPopup(`<b>${infodata.data.stations[i].name}</b>
+    <br>
+    ${availabledata.data.stations[i].num_bikes_available} vélo disponible`).openPopup();
+}
 
     
     async function fetchvelo() {
@@ -64,23 +67,32 @@ function popup(marker,infodata,i,availabledata) {marker.bindPopup(`<b>${infodata
     
             //______________________________________
             console.log(availabledata);
-            console.log(infodata);
+            console.log("info",infodata);
     
             console.log(availabledata.data.stations);
             console.log(infodata.data.stations);
             //________________________________________
-    
 
-            infodata.data.stations.forEach((element,i) => {  //param foreach (element, index , tableau parent) => {}
-                let latitude = element.lat;
-                let longitude = element.lon;
-                
-    
-                let marker=affichepoint(latitude, longitude,i,availabledata);  
-                popup(marker,infodata,i,availabledata)
+            search.addEventListener("input", function(e) { // Utilisez "input" au lieu de "keydown" pour détecter les changements lors de la saisie
+                let saisie = search.children[0].value.toLowerCase(); // Utilisez search.value directement pour récupérer la valeur de saisie
+                let filter = infodata.data.stations.filter(station => station.name.toLowerCase().includes(saisie)); // Utilisez "station.name" au lieu de "user.name"
+            
+                console.log(filter); // Vérifiez les stations filtrées dans la console
+            
+                // Effacer tous les marqueurs de la carte avant d'ajouter les nouveaux marqueurs filtrés
+                map.eachLayer(layer => {
+                    if (layer instanceof L.Marker) {
+                        map.removeLayer(layer);
+                    }
+                });
+            
+                // Afficher les nouveaux marqueurs filtrés sur la carte
+                filter.forEach((station, i) => {
+                    let marker = affichepoint(station.lat, station.lon, i, availabledata);
+                    popup(marker, infodata, i, availabledata);
+                });
             });
         }
-      
     
         fetchvelo()
     })
