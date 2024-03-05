@@ -1,3 +1,8 @@
+main {
+}
+
+img {
+}
 .bubulle {
   position: absolute;
   z-index: -1;
@@ -11,8 +16,8 @@
 }
 
 .card {
-  width: auto;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .card:hover {
@@ -25,9 +30,8 @@ button {
 }
 
 .vign {
-  width: auto;
-  height: auto;
-  padding: 32px 0 0 32px;
+  width: 150px;
+  height: 150px;
 }
 
 .dots {
@@ -88,7 +92,7 @@ i {
   .card {
     width: auto;
     height: auto;
-    margin: 30px;
+    margin: 10px;
   }
 
   .hide {

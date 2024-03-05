@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.green {
+  color: var(--theme1);
+}
+
 .link-footer:hover {
   font-weight: 700;
 }
@@ -240,6 +244,10 @@
   background-color: var(--light);
 }
 
+.bg-color-popup {
+  background-color: var(--theme2);
+}
+
 /*ANCHOR - FOOTER */
 .m-l-and-r {
   margin-left: 15px;
@@ -266,6 +274,10 @@
 
 .minw-300 {
   min-width: 300px;
+}
+
+.minh-300 {
+  min-height: 300px;
 }
 
 .min-h-6 {
@@ -304,8 +316,8 @@
   width: 60vw;
 }
 
-.w-100vw {
-  width: 100vh;
+.maxw-90vw {
+  max-width: 90vh;
 }
 
 .h-120 {
@@ -346,6 +358,10 @@
 
 .mb-2 {
   margin-bottom: 2em;
+}
+
+.mt-2 {
+  margin-top: 2em;
 }
 
 .mt-4 {
@@ -405,6 +421,11 @@
 .px-2 {
   padding-right: 2em;
   padding-left: 2em;
+}
+
+.py-8px {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .py-1 {
@@ -495,6 +516,10 @@
 .top--90 {
   top: -90px;
 } 
+
+.float-r {
+  float: right;
+}
 
 /* ANCHOR - SHADOW */
 

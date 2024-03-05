@@ -1,35 +1,8 @@
 
-.container {
+.bg-img {
     background-image: url(../../image/Calculateur.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 
-
-/* Add styles to the form container */
-
-.description {
-    margin-top: 32px
-}
-
-#form-popup, #alert-popup {
-    min-width: 300px;
-    display: none;
-    margin: auto;
-    padding: 8px 16px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4); ;
-    position: absolute;
-}
-
-.close {
-    float: right;
-    border: none;
-    background-color: #ffffff;
-    color: #009961;
-}
-
-.fa-xmark {
-    font-size: 24px;
-}
