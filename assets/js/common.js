@@ -2,7 +2,7 @@
 function displayHeader() {
     console.log('displayHeader')
     const header = document.createElement('header')
-    header.classList.add('mb-2')
+    header.classList.add('mb-1')
     header.innerHTML = `
     <div id="root" class="header-box">
       <div id="topnav" class="topnav">
@@ -51,7 +51,7 @@ function displayFooter() {
     footer.classList.add('mb-2', 'border-s', 'mt-3')
     footer.innerHTML = `
         <div class="d-flex jc-sb mt-3 wrap g-2 m-l-and-r">
-        <p class="m-f">&copy; 2024 Zéphyrus Plimplom</p>
+        <p class="m-f">&copy; 2024 EZ BIKE</p>
             <ul class="m-0 d-flex g-2 wrap">
                 <li><a href="/index.html" class="link-footer">Accueil</a></li>
                 <li><a href="/modeEmploi.html" class="link-footer">Mode d'emploi</a></li>
