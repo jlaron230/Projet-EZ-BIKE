@@ -3,16 +3,6 @@
     background-color: rgba(0, 0, 0, 0.1);
 } */
 
-body {
-    box-sizing: border-box;
-}
-
-#bg-img {
-    background-image: url(../../image/Calculateur.svg);
-    background-position: 42% 6%; /* axe X - axe Y*/
-    background-repeat: no-repeat;
-    background-size: 80%;
-}
 
 .circle {
     width: 140px;
@@ -24,9 +14,6 @@ body {
     top: -60px;
 }
 
-.w-special {
-    max-width: 1020px;
-}
 
 #form-style {
     padding: 20px;
