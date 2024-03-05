@@ -73,26 +73,32 @@ function popup(marker,infodata,i,availabledata) {
             console.log(infodata.data.stations);
             //________________________________________
 
-            search.addEventListener("input", function(e) { // Utilisez "input" au lieu de "keydown" pour détecter les changements lors de la saisie
-                let saisie = search.children[0].value.toLowerCase(); // Utilisez search.value directement pour récupérer la valeur de saisie
-                let filter = infodata.data.stations.filter(station => station.name.toLowerCase().includes(saisie)); // Utilisez "station.name" au lieu de "user.name"
-            
-                console.log(filter); // Vérifiez les stations filtrées dans la console
-            
-                // Effacer tous les marqueurs de la carte avant d'ajouter les nouveaux marqueurs filtrés
-                map.eachLayer(layer => {
-                    if (layer instanceof L.Marker) {
-                        map.removeLayer(layer);
-                    }
-                });
-            
-                // Afficher les nouveaux marqueurs filtrés sur la carte
-                filter.forEach((station, i) => {
-                    let marker = affichepoint(station.lat, station.lon, i, availabledata);
-                    popup(marker, infodata, i, availabledata);
-                });
+
+        // Afficher tous les marqueurs au chargement de la page sans filtre
+        infodata.data.stations.forEach((station, i) => {
+            let marker = affichepoint(station.lat, station.lon, i, availabledata);
+            popup(marker, infodata, i, availabledata);
+        });
+
+        // Filtrer les marqueurs en fonction de la saisie dans la barre de recherche
+        search.addEventListener("input", function(e) {
+            let saisie = search.children[0].value.toLowerCase();
+            let filter = infodata.data.stations.filter(station => station.name.toLowerCase().includes(saisie));
+        
+            console.log(filter);
+        
+            map.eachLayer(layer => {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
             });
-        }
-    
-        fetchvelo()
-    })
+        
+            filter.forEach((station, i) => {
+                let marker = affichepoint(station.lat, station.lon, i, availabledata);
+                popup(marker, infodata, i, availabledata);
+            });
+        });
+    }
+
+    fetchvelo();
+});
