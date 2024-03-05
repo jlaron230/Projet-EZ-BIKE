@@ -775,13 +775,6 @@ ____________________________________________caculateur css______________________
   background-size: 80%;
 }
 
-/* 
-____________________________________________caculateur css________________________________ */
-
-.f-1-600 {
-  flex: 1 1 360px;
-}
-
 /* contract.css     __________________________________________________________________________________ */
 
 /* * {
@@ -790,15 +783,6 @@ ____________________________________________caculateur css______________________
 } */
 
 
-.circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 140px;
-  border: 18px solid green;
-  position: absolute;
-  right: -50px;
-  top: -60px;
-}
 
 
 #form-style {
@@ -808,7 +792,7 @@ ____________________________________________caculateur css______________________
 }
 
 .f-1-600 {
-  flex: 1 1 400px;
+  flex: 1 1 360px;
 }
 
 form {
@@ -849,13 +833,7 @@ button[type=submit] {
   }
   
   .circle {
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-      border: 7px dashed rgba(0, 255, 21, 0.1);
-      position: absolute;
-      right: 20px;
-      top: 200px;
+    display: none;
   }
 }
 
@@ -871,10 +849,22 @@ button[type=submit] {
       width: 140px;
       height: 140px;
       border-radius: 140px;
-      border: 17px solid rgba(0, 128, 0, 0.8);
+      border: 17px solid var(--theme1);
       position: absolute;
       right: -90px;
       top: -70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #bg-img {
+      background-position: 10% 0%; /* axe X - axe Y*/
+      background-repeat: repeat-x;
+      background-size: 100%;
+  }
+  
+  .circle {
+      display: none;
   }
 }
 
@@ -1077,15 +1067,6 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
-
-* {
-  box-sizing: inherit;
-  &:before,
-  &:after {
-      box-sizing: inherit;
-  }
-}
-
 
 body {
 
