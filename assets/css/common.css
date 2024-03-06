@@ -281,6 +281,13 @@ transform: none;
   font-weight: 700;
 }
 
+/* ANCHOR - HR */
+
+.hr {
+  color: #009961;
+  height: 2px;
+}
+
 /* ANCHOR - COMMINGSOON */
 
 .time__Compteur {
@@ -365,6 +372,10 @@ transform: none;
 
 .m-f {
   margin: 0;
+}
+
+.m-8 {
+  margin: 0 8px 0 8px;
 }
 
 .my-8px {
