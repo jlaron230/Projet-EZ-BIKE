@@ -270,6 +270,13 @@
   font-weight: 700;
 }
 
+/* ANCHOR - HR */
+
+.hr {
+  color: #009961;
+  height: 2px;
+}
+
 /* ANCHOR - COMMINGSOON */
 
 .time__Compteur {
@@ -354,6 +361,11 @@
 .m-f {
   margin: 0;
 }
+
+.m-8 {
+  margin: 0 8px 0 8px;
+}
+
 
 .my-8px {
   margin: 8px 0;
@@ -858,6 +870,7 @@ button[type="submit"] {
 .bubulle {
   position: absolute;
   z-index: -1;
+  max-width: 130%;
 }
 .right {
   right: 0;
@@ -1265,7 +1278,6 @@ hr:after {
 
 #map {
   height: 700px;
-  z-index: -1
 }
 
 /* ANCHOR Search Titre     
