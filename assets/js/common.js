@@ -2,8 +2,8 @@
 function displayHeader() {
     console.log('displayHeader')
     const header = document.createElement('header')
+    header.classList.add('mb-1')
     header.innerHTML = `
-    <header>
     <div id="root" class="header-box">
       <div id="topnav" class="topnav">
         <a id="home_link" class="topnav_link" href="index.html"><img src="../image/ez-bike_logo.svg" alt="Logo"></a>
@@ -15,7 +15,7 @@ function displayHeader() {
           <a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a>
           <a class="topnav_link" href="calculateur.html">Calculateur</a>
           <a class="topnav_link" href="contact.html">Contact</a>
-          <a class="topnav_link" href="comingSoon.html">C'est pour le ménage</a>
+          <a class="topnav_link" href="comingSoon.html">Une page qui sert à rien</a>
         </nav>
 
         <a
@@ -37,10 +37,10 @@ function displayHeader() {
             <li><a class="topnav_link" href="trouver-un-velib.html">Trouver un vélib</a></li>
             <li><a class="topnav_link" href="calculateur.html">Calculateur</a></li>
             <li><a class="topnav_link" href="contact.html">Contact</a></li>
-            <li><a class="topnav_link" href="comingSoon.html">C'est pour le ménage</a></li>
+            <li><a class="topnav_link" href="comingSoon.html">Une page qui sert à rien</a></li>
+            
         </ul>
         </nav>
-    </header>
     `
     document.body.prepend(header)
 }
@@ -49,17 +49,17 @@ function displayHeader() {
 function displayFooter() {
     console.log('displayFooter')
     const footer = document.createElement('footer')
-    footer.classList.add('mb-3', 'border-s', 'mt-3')
+    footer.classList.add('mb-2', 'border-s', 'mt-3')
     footer.innerHTML = `
-        <div class="d-flex jc-sb mt-3 wrap">
-        <p class="m-f">&copy; 2024 Zéphyrus Plimplom</p>
-            <ul class="footer-desktop m-f d-flex g-2">
+        <div class="d-flex jc-sb mt-3 wrap g-2 m-l-and-r">
+        <p class="m-f">&copy; 2024 EZ BIKE</p>
+            <ul class="m-0 d-flex g-2 wrap">
                 <li><a href="/index.html" class="link-footer">Accueil</a></li>
                 <li><a href="/modeEmploi.html" class="link-footer">Mode d'emploi</a></li>
                 <li><a href="/trouver-un-velib.html" class="link-footer">Trouver un vélib</a></li>
                 <li><a href="/contact.html" class="link-footer">Calculateur</a></li>
                 <li><a href="/contact.html" class="link-footer">Contact</a></li>
-                <li><a href="/comingSoon.html" class="link-footer">C'est pour le ménage</a></li>
+                <li><a class="link-footer" href="/comingSoon.html">Une page qui sert à rien</a></li>
                 </ul>
             </div>
     `

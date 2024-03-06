@@ -3,11 +3,11 @@ let lastName = document.getElementById('name');
 let firstName = document.getElementById('firstName');
 let phone = document.getElementById('phoneNumber');
 let email = document.getElementById('email');
-let msg = document.getElementById('message');
+let messageInput = document.getElementById('message');
 
 // ANCHOR Vérification de la validité du formulaire
 function valideForm() {
-    let elements = [firstName, lastName, phone, email, msg];
+    let elements = [firstName, lastName, phone, email, messageInput];
     const invalides = elements.filter(element => element.value === null || element.value === undefined || element.value === "");
 
     if (invalides.length > 0) {
