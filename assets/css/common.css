@@ -1265,6 +1265,7 @@ hr:after {
 
 #map {
   height: 700px;
+  z-index: -1
 }
 
 /* ANCHOR Search Titre     
