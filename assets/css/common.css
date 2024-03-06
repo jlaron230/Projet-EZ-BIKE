@@ -281,13 +281,6 @@ transform: none;
   font-weight: 700;
 }
 
-/* ANCHOR - HR */
-
-.hr {
-  color: #009961;
-  height: 2px;
-}
-
 /* ANCHOR - COMMINGSOON */
 
 .time__Compteur {
@@ -372,10 +365,6 @@ transform: none;
 
 .m-f {
   margin: 0;
-}
-
-.m-8 {
-  margin: 0 8px 0 8px;
 }
 
 .my-8px {
@@ -997,14 +986,15 @@ i {
   }
 
   .carousel {
-    max-width: 170px;
+    max-width: 220px;
     padding-left: 20px;
     padding-bottom: 10px;
     padding-right: 20px;
+    margin:auto
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 361px) {
   .vign:hover{
     box-shadow: 5px 5px 15px 5px;
     padding: 10px;
