@@ -1441,7 +1441,7 @@ body {
 
 .cardlorem{
   text-align: center;
-}
+  margin-bottom: 50px;}
 
 /* ANCHOR Layer */
 @layer reboot {
