@@ -390,7 +390,6 @@
   margin: 0 8px 0 8px;
 }
 
-
 .my-8px {
   margin: 8px 0;
 }
@@ -981,11 +980,9 @@ main {
     justify-content: center;
   }
 
-
-  .vign:hover{
+  .vign:hover {
     box-shadow: 0px;
-
-}
+  }
 
   .card {
     width: auto;
@@ -1013,16 +1010,16 @@ main {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-right: 20px;
-    margin:auto
+    margin: auto;
   }
 }
 
 @media (min-width: 361px) {
-  .vign:hover{
+  .vign:hover {
     box-shadow: 5px 5px 15px 5px;
     padding: 10px;
     border-radius: 7px;
-}
+  }
 }
 
 /* page 404  ____________________________________________________________________ */
@@ -1318,13 +1315,12 @@ hr:after {
           }
           
           /* ANCHOR MAP */
-          
-          #map{
-              height: 700px;
-              z-index: -1;
-          }
-          
-          /* ANCHOR Search Titre     
+
+#map {
+  height: 700px;
+}
+
+/* ANCHOR Search Titre     
           }*/
 .Recherche {
   display: flex;
