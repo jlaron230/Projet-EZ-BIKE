@@ -904,10 +904,6 @@ button[type=submit] {
   height: 100px;
 }
 
-.card:hover{
-    box-shadow: 5px 5px 15px 5px;
-}
-
 .btn-carousel {
   display: none;
   background: none;
@@ -974,6 +970,11 @@ i {
     justify-content: center;
   }
 
+  .vign:hover{
+    box-shadow: 0px;
+
+}
+
   .card {
     width: auto;
     height: auto;
@@ -1001,6 +1002,14 @@ i {
     padding-bottom: 10px;
     padding-right: 20px;
   }
+}
+
+@media (min-width: 360px) {
+  .vign:hover{
+    box-shadow: 5px 5px 15px 5px;
+    padding: 10px;
+    border-radius: 7px;
+}
 }
 
 /* page 404  ____________________________________________________________________ */
