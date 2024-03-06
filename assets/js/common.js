@@ -51,7 +51,7 @@ function displayFooter() {
     const footer = document.createElement('footer')
     footer.classList.add('mb-2', 'border-s', 'mt-3')
     footer.innerHTML = `
-        <div class="d-flex jc-sb mt-3 wrap g-2 m-l-and-r">
+        <div class="d-flex jc-sb mt-3 wrap g-2 m-l-and-r ai-c">
         <p class="m-f">&copy; 2024 EZ BIKE</p>
             <ul class="m-0 d-flex g-2 wrap">
                 <li><a href="/index.html" class="link-footer">Accueil</a></li>
