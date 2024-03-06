@@ -909,9 +909,19 @@ button[type="submit"] {
   left: 0;
 }
 
-.card {
-  width: 100px;
-  height: 100px;
+.card{
+text-align: center;
+max-width: 250px;
+height: 350px;
+
+
+
+}
+
+.card:hover {
+  box-shadow: 5px 5px 15px 5px;
+  padding: 10px;
+  border-radius: 7px;
 }
 
 
@@ -922,15 +932,18 @@ button[type="submit"] {
 }
 
 .vign {
-  width: 150px;
+  width: 100px;
   height: 150px;
+ 
+  margin-bottom: 10px;
+
 }
 
 .dots {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: -20px;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -983,14 +996,21 @@ main {
     justify-content: center;
   }
 
+  .vign {
+padding-left: -100px;
+  }
+
+
   .vign:hover {
     box-shadow: 0px;
   }
 
-  .card {
-    width: auto;
-    height: auto;
-    margin: 10px;
+ 
+    .card{
+      text-align: center;
+      max-width: 250px;
+      height: 200px 
+
   }
 
   .hide {
@@ -1009,21 +1029,15 @@ main {
   }
 
   .carousel {
-    max-width: 220px;
+    max-width: 155px;
     padding-left: 20px;
     padding-bottom: 10px;
-    padding-right: 20px;
     margin: auto;
+  
   }
 }
 
-@media (min-width: 361px) {
-  .vign:hover {
-    box-shadow: 5px 5px 15px 5px;
-    padding: 10px;
-    border-radius: 7px;
-  }
-}
+
 
 /* page 404  ____________________________________________________________________ */
 
@@ -1699,4 +1713,8 @@ body {
     opacity: 0.6;
     cursor: not-allowed;
   }
+}
+
+h3{
+  text-align: center;
 }
