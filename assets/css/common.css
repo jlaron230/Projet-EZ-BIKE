@@ -908,9 +908,6 @@ button[type="submit"] {
   height: 100px;
 }
 
-.card:hover {
-  box-shadow: 5px 5px 15px 5px;
-}
 
 .btn-carousel {
   display: none;
@@ -1446,4 +1443,9 @@ body {
   #map {
     height: 400px;
   }
+}
+
+
+.cardlorem{
+  text-align: center;
 }
