@@ -46,6 +46,7 @@
 
 .f-size-70 {
   font-size: 70px;
+  margin: 0;
 }
 
 /* ANCHOR - HEADER */
@@ -346,6 +347,29 @@
 
 .m-h {
   max-height: 100%;
+}
+
+/* ANCHOR - COMINGSOON */
+.coming{
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.coming_main{
+  margin-top: 5em;
+}
+
+.coming_devP{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.coming_divE{
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
 }
 
 /* ANCHOR - MARGIN */
@@ -947,6 +971,11 @@ i {
   font-size: 30px;
   font-weight: bold;
 }
+
+main {
+  min-height: 100vh;
+}
+
 @media (max-width: 360px) {
   main {
     justify-content: center;
@@ -1388,6 +1417,7 @@ html {
 }
 
 body {
+  font-family: var(--body-font);
   .dribbble {
     position: fixed;
     display: block;
