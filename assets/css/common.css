@@ -1047,11 +1047,7 @@ padding-left: -100px;
 }
 
 @media (min-width: 361px) {
-  .vign:hover {
-    box-shadow: 5px 5px 15px 5px;
-    padding: 10px;
-    border-radius: 7px;
-  }
+
   .p-50{
     width: 50%;
   }
