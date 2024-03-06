@@ -1,6 +1,6 @@
 
 Par les : Spaciocatographes de la Salspareil
- CONTRIBUTORS : Renaud Mercier, Manon Drozdzowski, Emmanuelle Sanchez, Faysoll
+ CONTRIBUTORS : Renaud Mercier, Manon Drozdzowski, Emmanuelle Sanchez, Faysoll Da Silva, Jérôme Gavino
 
 --Déploiement de l'applications:--
 
