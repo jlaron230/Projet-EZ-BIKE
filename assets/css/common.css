@@ -858,6 +858,7 @@ button[type="submit"] {
 .bubulle {
   position: absolute;
   z-index: -1;
+  max-width: 130%;
 }
 .right {
   right: 0;
