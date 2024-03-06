@@ -27,11 +27,6 @@ main {
   max-width: 1020px;
 }
 
-#form-style {
-  padding: 20px;
-  margin: auto;
-}
-
 .f-1-600 {
   flex: 1 1 400px;
 }
