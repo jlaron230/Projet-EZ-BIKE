@@ -362,13 +362,14 @@
 }
 
 .coming_main{
-  margin-top: 5em;
+  margin-top: 40vh;
 }
 
 .coming_devP{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .coming_divE{
@@ -376,6 +377,7 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  text-align: center;
 }
 
 /* ANCHOR - MARGIN */
@@ -448,6 +450,10 @@
 }
 
 /* ANCHOR - PADDING */
+
+.w-100{
+width: 100px;
+}
 
 .p-8px {
   padding: 8px;
@@ -988,7 +994,7 @@ i {
 }
 
 main {
-  min-height: 100vh;
+  margin-bottom: 40vh;
 }
 
 @media (max-width: 360px) {
@@ -1033,7 +1039,21 @@ padding-left: -100px;
     padding-left: 20px;
     padding-bottom: 10px;
     margin: auto;
-  
+  }
+
+  .p-50{
+    width: 100%;
+  }
+}
+
+@media (min-width: 361px) {
+  .vign:hover {
+    box-shadow: 5px 5px 15px 5px;
+    padding: 10px;
+    border-radius: 7px;
+  }
+  .p-50{
+    width: 50%;
   }
 }
 
