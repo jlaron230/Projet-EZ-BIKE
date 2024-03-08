@@ -525,6 +525,10 @@ width: 100px;
   align-items: center;
 }
 
+.as-c {
+  align-self: center;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -961,7 +965,7 @@ height: 350px;
   width: 16px;
   height: 16px;
   background-color: rgb(245, 248, 245);
-  margin: 8px;
+  margin: 7px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -1002,6 +1006,7 @@ main {
 @media screen and (min-width: 340px) and (max-width: 600px) {
   main {
     justify-content: center;
+    display: flex;
   }
 
   .vign {
