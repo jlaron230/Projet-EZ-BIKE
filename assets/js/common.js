@@ -57,7 +57,7 @@ function displayFooter() {
                 <li><a href="/index.html" class="link-footer">Accueil</a></li>
                 <li><a href="/modeEmploi.html" class="link-footer">Mode d'emploi</a></li>
                 <li><a href="/trouver-un-velib.html" class="link-footer">Trouver un vélib</a></li>
-                <li><a href="/contact.html" class="link-footer">Calculateur</a></li>
+                <li><a href="/calculateur.html" class="link-footer">Calculateur</a></li>
                 <li><a href="/contact.html" class="link-footer">Contact</a></li>
                 <li><a class="link-footer" href="/comingSoon.html">Coming Soon</a></li>
                 </ul>
