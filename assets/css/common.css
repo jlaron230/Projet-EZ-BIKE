@@ -999,7 +999,7 @@ main {
   margin-bottom: 20vh;
 }
 
-@media (max-width: 360px) {
+@media screen and (min-width: 340px) and (max-width: 600px) {
   main {
     justify-content: center;
   }
